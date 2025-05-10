@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fali Yàs Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #008080;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #008080;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f9f9f9;
+    }
+    .gallery-item img, .gallery-item video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .gallery-item .info {
+      padding: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ff7f50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fali Yàs</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Fali Yàs is a 3D Artist and Video Editor with over 7 years of experience. His work bridges personal creativity with commercial storytelling, having collaborated with brands such as Photogravure while continuing to explore his own artistic vision through independent projects.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <video controls>
+          <source src="media/lv_0_20250509233633.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="info">
+          <strong>2024 Work</strong><br>
+          Project: Personal
+        </div>
+      </div>
+      <div class="gallery-item">
+        <video controls>
+          <source src="media/client_homepage_edit.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="info">
+          <strong>2018 Work</strong><br>
+          Project: Photogravure (Commercial)
+        </div>
+      </div>
+      <div class="gallery-item">
+        <video controls>
+          <source src="media/video_render_wiltering_edit.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="info">
+          <strong>2023 Work</strong><br>
+          Project: Photogravure (Commercial)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Fali Yàs. All rights reserved.
+  </footer>
+</body>
+</html>
